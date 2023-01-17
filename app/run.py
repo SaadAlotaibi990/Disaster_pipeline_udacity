@@ -67,31 +67,13 @@ def index():
         {
             'data': [
                 Bar(
-                    x=nlarge_names,
-                    y=nlarge_counts
+                    x=category_names,
+                    y=category_counts
                 )
             ],
 
             'layout': {
-                'title': 'Top message categories',
-                'yaxis': {
-                    'title': "Count"
-                },
-                'xaxis': {
-                    'title': "Category"
-                }
-            }
-        },
-        {
-            'data': [
-                Bar(
-                    x=cats_names,
-                    y=cats_counts
-                )
-            ],
-
-            'layout': {
-                'title': 'Distribution of Message categories',
+                'title': 'Distribution of Message Categories',
                 'yaxis': {
                     'title': "Count"
                 },
@@ -100,7 +82,6 @@ def index():
                 }
             }
         }
-        
     ]
     
     # encode plotly graphs in JSON
